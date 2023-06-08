@@ -5,11 +5,13 @@ Trains for all possible prefetches, independetly of actions actually taken, whet
 This allows it to prefetch at a highly variable degree -- up to the whole page if necessary -- and look far further into the future than other prefetchers. Its accuracy threshold gauruntees that all issued prefetches will be on average useful.
 # How to use
 Can be used directly in the current champsim version at https://github.com/ChampSim/ChampSim#readme by selecting it as the L2 prefetcher  
+```
 {  
-    "L2C": {  
+"L2C": {  
         "prefetcher": "my5"  
     }  
-}  
+}
+```
 # Basic results
 29% IPC improvement over no prefetcher.  
 10% IPC improvement over previous state-of-the-art Pythia https://github.com/CMU-SAFARI/Pythia/tree/master
